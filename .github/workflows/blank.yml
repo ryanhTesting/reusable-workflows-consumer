@@ -1,0 +1,16 @@
+
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  reusable:
+    uses: ryanhTesting/org-workflows/.github/workflows/reusable.yml@main
+    with:
+      variable1: "string var"
+    secrets:
+      secret1: ${{ secrets.secret1 }}
