@@ -12,5 +12,5 @@ jobs:
     uses: ryanhTesting/org-workflows/.github/workflows/reusable.yml@main
     with:
       variable1: "string var"
-    secrets:
-      secret1: ${{ secrets.secret1 }}
+    # secrets:
+    #   secret1: ${{ secrets.secret1 }}
