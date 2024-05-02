@@ -1,0 +1,19 @@
+
+name: CI
+
+on:
+  workflow_call:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+       - name: action
+         uses: ryanhTesting/org-workflows/.github/actions/docker-example@main
+         with:
+           who-to-greet: 'Mona the Octocat'
+      # Use the output from the `hello` step
+       - name: Get the output time
+         run: echo "The time was ${{ steps.hello.outputs.time }}"
+
+  
