@@ -9,7 +9,7 @@ on:
 
 jobs:
   reusable:
-    uses: ryanhTesting/org-workflows/.github/workflows/reusable.yml@main
+    uses: ryanhTesting/org-workflows/.github/workflows/reusable2.yml@main
     with:
       variable1: "string var"
       environment: "staging"
