@@ -1,8 +1,8 @@
 
-name: CI
+name: testing action
 
 on:
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
   job1:
