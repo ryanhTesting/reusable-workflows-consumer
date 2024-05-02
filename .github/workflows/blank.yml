@@ -14,6 +14,7 @@ jobs:
       variable1: "string var"
       environment: "staging"
     secrets: inherit
+
     
     # secrets:
     #   secret1: ${{ secrets.secret1 }}
